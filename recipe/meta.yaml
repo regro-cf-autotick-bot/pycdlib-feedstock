@@ -1,5 +1,5 @@
 {% set name = "pycdlib" %}
-{% set version = "1.12.0" %}
+{% set version = "1.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pycdlib-{{ version }}.tar.gz
-  sha256: 6549f29f8d9b4ba6933b309c51ff6a4dc79ef5831a81e065cb6cc385c1ba7fe2
+  sha256: 38c033be82d3a671da5f779d441942907299c2113a6c50e1fb399a91ea1612f0
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
